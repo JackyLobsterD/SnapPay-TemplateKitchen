@@ -1,0 +1,60 @@
+{
+    "name": "templatekitchen",
+    "version": "0.1.0",
+    "main": "dist/app.js",
+    "private": true,
+    "dependencies": {
+        "antd": "^3.19.2",
+        "jsoneditor": "^5.33.0",
+        "jsoneditor-react": "^1.0.1",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "react-scripts": "3.0.1"
+    },
+    "devDependencies": {
+        "@types/react": "^16.8.19",
+        "@types/react-dom": "^16.8.4",
+        "babel-cli": "^6.24.1",
+        "babel-core": "^6.24.1",
+        "babel-loader": "^7.0.0",
+        "babel-plugin-import": "^1.12.0",
+        "babel-plugin-transform-object-rest-spread": "^6.23.0",
+        "babel-plugin-transform-react-jsx": "^6.24.1",
+        "babel-preset-env": "^1.5.1",
+        "file-loader": "^4.0.0",
+        "lite-server": "^2.5.3",
+        "svg-inline-loader": "^0.8.0",
+        "svg-url-loader": "^2.3.2",
+        "ts-loader": "^6.0.2",
+        "typescript": "^3.5.1",
+        "webpack": "^4.33.0",
+        "webpack-cli": "^3.3.2",
+        "webpack-dev-server": "^3.6.0"
+    },
+    "scripts": {
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "start": "lite-server",
+        "build": "webpack --mode development",
+        "watch": "webpack --watch",
+        "link": "link",
+        "dev": "webpack-dev-server --hot --inline",
+        "watchProd": "webpack --mode production",
+        "watchDev": "webpack --mode development --watch"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}
