@@ -5,11 +5,12 @@
     "private": true,
     "dependencies": {
         "antd": "^3.19.2",
-        "jsoneditor": "^5.33.0",
         "jsoneditor-react": "^1.0.1",
         "react": "^16.8.6",
+        "react-dnd": "^8.0.0",
+        "react-dnd-html5-backend": "^8.0.0",
         "react-dom": "^16.8.6",
-        "react-scripts": "3.0.1"
+        "react-scripts": "^3.0.1"
     },
     "devDependencies": {
         "@types/react": "^16.8.19",
@@ -28,6 +29,7 @@
         "ts-loader": "^6.0.2",
         "typescript": "^3.5.1",
         "webpack": "^4.33.0",
+        "webpack-bundle-analyzer": "^3.3.2",
         "webpack-cli": "^3.3.2",
         "webpack-dev-server": "^3.6.0"
     },

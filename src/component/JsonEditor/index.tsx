@@ -44,8 +44,9 @@ export default class JEditor extends React.Component<PageProps, PageStates> {
 
     render() {
         const {jsonData} = this.state;
+        const {Fragment}=React;
         return (
-            <React.Fragment>
+            <Fragment>
                 <Row gutter={10}>
                     <Col span={12}>
                         <JsonEditor
@@ -61,7 +62,7 @@ export default class JEditor extends React.Component<PageProps, PageStates> {
                             style={{height: '100%'}}/>
                     </Col>
                 </Row>
-            </React.Fragment>
+            </Fragment>
         )
     }
 }
