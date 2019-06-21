@@ -2,28 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d3417d6-89cd-4805-96f4-f5ce311f84d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/component/DragEditior/DdTypes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/DragEditior/Ddmain.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/DragEditior/DragDemo/Colors.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/DragEditior/DragDemo/SourceBox.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/DragEditior/DragDemo/TargetBox.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/DragEditior/DragDemo/example.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/DragEditior/DragDemo/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/DragEditior/DragDemo/interfaces.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/DragEditior/DragDemo/withDragDropContext.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/DragEditior/DragMock/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/DragEditior/DragMock/withDragDropContext.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/DragEditior/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/DragEditior/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/DragEditior/interfaces.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/DragEditior/DragDemo/lllldemo.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/DragEditior/DragMock/TargetBox.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/app.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/JsonEditor/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/JsonEditor/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/DragEditior/DragDemo/SourceBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/DragEditior/DragDemo/SourceBox.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/DragEditior/DragDemo/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/DragEditior/DragDemo/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/DragEditior/DragMock/DdTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/DragEditior/DragMock/DdTypes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/DragEditior/DragMock/Ddmain.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/DragEditior/DragMock/JsonDragEditor.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/DragEditior/DragMock/SourceBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/DragEditior/DragMock/SourceBox.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/DragEditior/DragMock/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/DragEditior/DragMock/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/DragEditior/DragMock/interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/DragEditior/DragMock/interfaces.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/DragEditior/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/DragEditior/index.tsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,87 +27,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DragDemo/index.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DragDemo/example.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="20" column="63" lean-forward="true" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/component/DragEditior/Ddmain.tsx">
+        <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DragMock/TargetBox.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+            <state relative-caret-position="272">
+              <caret line="41" column="50" lean-forward="true" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
               <folding>
-                <element signature="e#0#25#0" expanded="true" />
+                <element signature="e#0#52#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DragDemo/interfaces.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/component/DragEditior/interfaces.ts">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DdTypes.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="8" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DragMock/index.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DragMock/withDragDropContext.ts">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DragDemo/Colors.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -125,7 +43,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>jsoneditor</find>
       <find>__dirname</find>
       <find>jsonData</find>
       <find>Json</find>
@@ -141,6 +58,21 @@
       <find>HTML5Backend</find>
       <find>drop</find>
       <find>useDrop</find>
+      <find>small</find>
+      <find>forbidDrag</find>
+      <find>useState</find>
+      <find>Drop here</find>
+      <find>console</find>
+      <find>StatefulTargetBoxState</find>
+      <find>color</find>
+      <find>content</find>
+      <find>setContent</find>
+      <find>drag</find>
+      <find>ddtype</find>
+      <find>handleValue</find>
+      <find>onchange</find>
+      <find>type</find>
+      <find>did</find>
     </findStrings>
     <replaceStrings>
       <replace>jsonData</replace>
@@ -162,20 +94,27 @@
         <option value="$PROJECT_DIR$/src/component/DragEditior/DragDemo/ItemTypes.ts" />
         <option value="$PROJECT_DIR$/src/component/DragEditior/DragDemo/examples.tsx" />
         <option value="$PROJECT_DIR$/src/component/DragEditior/DragDemo/Colors.ts" />
-        <option value="$PROJECT_DIR$/src/component/DragEditior/DragDemo/SourceBox.tsx" />
         <option value="$PROJECT_DIR$/src/component/DragEditior/DragDemo/interfaces.ts" />
         <option value="$PROJECT_DIR$/src/component/DragEditior/DragDemo/withDragDropContext.js" />
-        <option value="$PROJECT_DIR$/src/component/DragEditior/DragDemo/index.tsx" />
-        <option value="$PROJECT_DIR$/src/component/DragEditior/DragDemo/TargetBox.tsx" />
-        <option value="$PROJECT_DIR$/src/component/DragEditior/DragMock/index.tsx" />
-        <option value="$PROJECT_DIR$/src/component/DragEditior/index.tsx" />
         <option value="$PROJECT_DIR$/src/component/DragEditior/DragTypes.ts" />
         <option value="$PROJECT_DIR$/src/component/DragEditior/DragDemo/example.tsx" />
         <option value="$PROJECT_DIR$/src/component/DragEditior/Ddmain.tsx" />
+        <option value="$PROJECT_DIR$/src/component/DragEditior/DragMock/Ddmain.tsx" />
+        <option value="$PROJECT_DIR$/src/component/DragEditior/DragDemo/lllldemo.tsx" />
+        <option value="$PROJECT_DIR$/src/component/DragEditior/DragDemo/index.tsx" />
+        <option value="$PROJECT_DIR$/src/component/DragEditior/DragDemo/SourceBox.tsx" />
+        <option value="$PROJECT_DIR$/src/component/DragEditior/DragMock/JsonDragEditor.tsx" />
+        <option value="$PROJECT_DIR$/src/component/DragEditior/index.tsx" />
+        <option value="$PROJECT_DIR$/src/component/DragEditior/DragMock/index.tsx" />
+        <option value="$PROJECT_DIR$/src/component/DragEditior/DragDemo/TargetBox.tsx" />
+        <option value="$PROJECT_DIR$/src/component/DragEditior/DragMock/DdTypes.ts" />
+        <option value="$PROJECT_DIR$/src/component/DragEditior/DragMock/SourceBox.tsx" />
+        <option value="$PROJECT_DIR$/src/component/DragEditior/DragMock/interfaces.ts" />
+        <option value="$PROJECT_DIR$/src/component/DragEditior/DragMock/TargetBox.tsx" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="836" />
@@ -185,7 +124,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -224,12 +162,21 @@
               <item name="SnapPay-TemplateKitchen" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="component" type="462c0819:PsiDirectoryNode" />
+              <item name="DragEditior" type="462c0819:PsiDirectoryNode" />
+              <item name="DragMock" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SnapPay-TemplateKitchen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SnapPay-TemplateKitchen" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
               <item name="JsonEditor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -291,24 +238,25 @@
       <workItem from="1560286987384" duration="807000" />
       <workItem from="1560441437561" duration="1854000" />
       <workItem from="1560548110644" duration="679000" />
-      <workItem from="1560781699775" duration="12969000" />
+      <workItem from="1560781699775" duration="24916000" />
+      <workItem from="1560959438407" duration="8822000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31441000" />
+    <option name="totallyTimeSpent" value="52210000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26752505" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32846716" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32846716" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -317,12 +265,12 @@
       <window_info anchor="bottom" id="TypeScript" order="8" weight="0.3296837" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3296837" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="right" id="JSON Viewer" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Key Promoter X" order="3" />
-      <window_info anchor="right" id="Json Parser" order="4" />
+      <window_info anchor="right" id="JSON Viewer" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Key Promoter X" order="4" />
+      <window_info anchor="right" id="Json Parser" order="5" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,41 +319,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="36" column="37" lean-forward="true" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/JsonEditor/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-140">
-          <caret line="46" column="31" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-            <element signature="e#124#169#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="51" column="34" lean-forward="true" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="50" column="28" lean-forward="true" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-dnd/lib/common/DndProvider.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -413,39 +326,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DragDemo/ItemTypes.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DragDemo/example.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DragDemo/ItemTypes.ts" />
     <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DragDemo/withDragDropContext.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DragDemo/SourceBox.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -464,29 +351,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DragDemo/TargetBox.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DragMock/withDragDropContext.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DragMock/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DragDemo/interfaces.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -494,43 +358,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/DragEditior/interfaces.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DdTypes.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="8" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/DragEditior/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="37" column="31" lean-forward="true" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/react/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="343" column="10" selection-start-line="343" selection-start-column="10" selection-end-line="343" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DragDemo/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/DragEditior/interfaces.ts" />
+    <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DdTypes.ts" />
     <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DragDemo/example.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -541,12 +370,161 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/DragEditior/Ddmain.tsx">
+    <entry file="file://$PROJECT_DIR$/src/component/DragEditior/Ddmain.tsx" />
+    <entry file="file://$PROJECT_DIR$/src/component/DragEditior/SourceBox.tsx" />
+    <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DragDemo/lllldemo.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+        <state>
+          <caret selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DragMock/JsonDragEditor.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DragDemo/SourceBox.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="51" column="34" lean-forward="true" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/DragEditior/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-dnd/lib/interfaces/monitors.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="67" column="4" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DragMock/withDragDropContext.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/react/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="500" column="9" selection-start-line="500" selection-start-column="9" selection-end-line="500" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DragMock/DdTypes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DragMock/SourceBox.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DragMock/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DragMock/interfaces.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DragDemo/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="34" column="27" lean-forward="true" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/JsonEditor/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#124#169#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DragDemo/TargetBox.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="46" column="11" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/DragEditior/DragMock/TargetBox.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="41" column="50" lean-forward="true" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
           </folding>
         </state>
       </provider>

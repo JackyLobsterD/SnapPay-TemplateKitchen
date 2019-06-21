@@ -57,6 +57,7 @@ const SourceBox: React.FC<SourceBoxProps> = ({color, children}) => {
             />
             <small>Forbid drag</small>
             {children}
+            1234
         </div>
     )
 }

@@ -26623,10 +26623,10 @@ module.exports = function(originalModule) {
 
 /***/ }),
 
-/***/ "./src/component/DragEditior/DragDemo/Colors.ts":
-/*!******************************************************!*\
-  !*** ./src/component/DragEditior/DragDemo/Colors.ts ***!
-  \******************************************************/
+/***/ "./src/component/DragEditior/DragMock/DdTypes.ts":
+/*!*******************************************************!*\
+  !*** ./src/component/DragEditior/DragMock/DdTypes.ts ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -26634,16 +26634,17 @@ module.exports = function(originalModule) {
 
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = {
-    YELLOW: 'yellow',
-    BLUE: 'blue',
+    TEXT: 'text111',
+    PIC: 'pic111',
+    LABEL: 'label111'
 };
 
 
 /***/ }),
 
-/***/ "./src/component/DragEditior/DragDemo/SourceBox.tsx":
+/***/ "./src/component/DragEditior/DragMock/SourceBox.tsx":
 /*!**********************************************************!*\
-  !*** ./src/component/DragEditior/DragDemo/SourceBox.tsx ***!
+  !*** ./src/component/DragEditior/DragMock/SourceBox.tsx ***!
   \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -26668,55 +26669,35 @@ var __importStar = (this && this.__importStar) || function (mod) {
     result["default"] = mod;
     return result;
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importStar(__webpack_require__(/*! react */ "react"));
 var react_dnd_1 = __webpack_require__(/*! react-dnd */ "./node_modules/react-dnd/lib/index.js");
-var Colors_1 = __importDefault(__webpack_require__(/*! ./Colors */ "./src/component/DragEditior/DragDemo/Colors.ts"));
 var style = {
     border: '1px dashed gray',
     padding: '0.5rem',
     margin: '0.5rem',
 };
 var SourceBox = function (_a) {
-    var color = _a.color, children = _a.children;
-    var _b = react_1.useState(false), forbidDrag = _b[0], setForbidDrag = _b[1];
-    var _c = react_dnd_1.useDrag({
-        item: { type: "" + color },
-        canDrag: !forbidDrag,
+    var ddtype = _a.ddtype, json = _a.json, children = _a.children;
+    // console.log(json)
+    var _b = react_dnd_1.useDrag({
+        item: { type: "" + ddtype, json: json },
         collect: function (monitor) { return ({
             isDragging: monitor.isDragging(),
         }); },
-    }), isDragging = _c[0].isDragging, drag = _c[1];
-    var onToggleForbidDrag = react_1.useCallback(function () {
-        setForbidDrag(!forbidDrag);
-    }, [forbidDrag]);
-    var backgroundColor = react_1.useMemo(function () {
-        switch (color) {
-            case Colors_1.default.YELLOW:
-                return 'lightgoldenrodyellow';
-            case Colors_1.default.BLUE:
-                return 'lightblue';
-            default:
-                return 'lightgoldenrodyellow';
-        }
-    }, [color]);
-    var containerStyle = react_1.useMemo(function () { return (__assign({}, style, { backgroundColor: backgroundColor, opacity: isDragging ? 0.4 : 1, cursor: forbidDrag ? 'default' : 'move' })); }, [isDragging, forbidDrag, backgroundColor]);
-    return (react_1.default.createElement("div", { ref: drag, style: containerStyle },
-        react_1.default.createElement("input", { type: "checkbox", checked: forbidDrag, onChange: onToggleForbidDrag }),
-        react_1.default.createElement("small", null, "Forbid drag"),
-        children));
+    }), isDragging = _b[0].isDragging, drag = _b[1];
+    console.log({ isDragging: isDragging });
+    var containerStyle = react_1.useMemo(function () { return (__assign({}, style, { opacity: isDragging ? 0.4 : 1, cursor: 'move' })); }, [isDragging]);
+    return (react_1.default.createElement("div", { ref: drag, style: containerStyle }, children));
 };
 exports.default = SourceBox;
 
 
 /***/ }),
 
-/***/ "./src/component/DragEditior/DragDemo/TargetBox.tsx":
+/***/ "./src/component/DragEditior/DragMock/TargetBox.tsx":
 /*!**********************************************************!*\
-  !*** ./src/component/DragEditior/DragDemo/TargetBox.tsx ***!
+  !*** ./src/component/DragEditior/DragMock/TargetBox.tsx ***!
   \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -26747,157 +26728,51 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importStar(__webpack_require__(/*! react */ "react"));
 var react_dnd_1 = __webpack_require__(/*! react-dnd */ "./node_modules/react-dnd/lib/index.js");
-var Colors_1 = __importDefault(__webpack_require__(/*! ./Colors */ "./src/component/DragEditior/DragDemo/Colors.ts"));
+var DdTypes_1 = __importDefault(__webpack_require__(/*! ./DdTypes */ "./src/component/DragEditior/DragMock/DdTypes.ts"));
 var style = {
     border: '1px solid gray',
-    height: '15rem',
+    height: 'auto',
     width: '100%',
     padding: '2rem',
     textAlign: 'center',
+    clear: 'both'
 };
 var TargetBox = function (_a) {
-    var onDrop = _a.onDrop, lastDroppedColor = _a.lastDroppedColor;
+    var onDrop = _a.onDrop, content = _a.content, jsonComponentArray = _a.jsonComponentArray;
     var _b = react_dnd_1.useDrop({
-        accept: [Colors_1.default.YELLOW, Colors_1.default.BLUE],
-        drop: function (item) {
-            onDrop(item.type);
+        accept: [DdTypes_1.default.TEXT, DdTypes_1.default.PIC, DdTypes_1.default.LABEL],
+        drop: function (item, monitor) {
+            // const didDrop = monitor.didDrop()
+            onDrop(item.type, item.json);
             return undefined;
         },
         collect: function (monitor) { return ({
             isOver: monitor.isOver(),
-            canDrop: monitor.canDrop(),
+            // canDrop: monitor.canDrop(),
             draggingColor: monitor.getItemType(),
         }); },
-    }), _c = _b[0], isOver = _c.isOver, draggingColor = _c.draggingColor, canDrop = _c.canDrop, drop = _b[1];
-    var opacity = isOver ? 1 : 0.7;
-    var backgroundColor = '#fff';
-    switch (draggingColor) {
-        case Colors_1.default.BLUE:
-            backgroundColor = 'lightblue';
-            break;
-        case Colors_1.default.YELLOW:
-            backgroundColor = 'lightgoldenrodyellow';
-            break;
-        default:
-            break;
-    }
-    return (react_1.default.createElement("div", { ref: drop, style: __assign({}, style, { backgroundColor: backgroundColor, opacity: opacity }) },
-        react_1.default.createElement("p", null, "Drop here."),
-        !canDrop && lastDroppedColor && react_1.default.createElement("p", null,
-            "Last dropped: ",
-            lastDroppedColor)));
+    }), isOver = _b[0].isOver, drop = _b[1];
+    var backgroundColor = isOver ? 'blue' : '#fff';
+    return (react_1.default.createElement("div", { ref: drop, style: __assign({}, style, { backgroundColor: backgroundColor }) },
+        react_1.default.createElement("p", null,
+            "Drop here. ",
+            content),
+        jsonComponentArray.map(function (item, key) {
+            return (react_1.default.createElement("p", { key: key }, JSON.stringify(item)));
+        })));
 };
 var StatefulTargetBox = function (props) {
-    var _a = react_1.useState(null), lastDroppedColor = _a[0], setLastDroppedColor = _a[1];
-    var handleDrop = react_1.useCallback(function (color) { return setLastDroppedColor(color); }, []);
-    return (react_1.default.createElement(TargetBox, __assign({}, props, { lastDroppedColor: lastDroppedColor, onDrop: handleDrop })));
+    var _a = react_1.useState(null), content = _a[0], setContent = _a[1];
+    var _b = react_1.useState([]), _c = _b[0], jsonComponentArray = _c === void 0 ? [] : _c, setJsonComponentArray = _b[1];
+    var handleDrop = react_1.useCallback(function (color, jsonComponent) {
+        setContent(color);
+        var jsonComponentArrayTemp = jsonComponentArray;
+        jsonComponentArrayTemp.push(jsonComponent);
+        setJsonComponentArray(jsonComponentArrayTemp);
+    }, []);
+    return (react_1.default.createElement(TargetBox, __assign({}, props, { onDrop: handleDrop, content: content, jsonComponentArray: jsonComponentArray })));
 };
 exports.default = StatefulTargetBox;
-
-
-/***/ }),
-
-/***/ "./src/component/DragEditior/DragDemo/example.tsx":
-/*!********************************************************!*\
-  !*** ./src/component/DragEditior/DragDemo/example.tsx ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var react_1 = __importDefault(__webpack_require__(/*! react */ "react"));
-var SourceBox_1 = __importDefault(__webpack_require__(/*! ./SourceBox */ "./src/component/DragEditior/DragDemo/SourceBox.tsx"));
-var TargetBox_1 = __importDefault(__webpack_require__(/*! ./TargetBox */ "./src/component/DragEditior/DragDemo/TargetBox.tsx"));
-var Colors_1 = __importDefault(__webpack_require__(/*! ./Colors */ "./src/component/DragEditior/DragDemo/Colors.ts"));
-function Container() {
-    return (react_1.default.createElement(react_1.default.Fragment, null,
-        react_1.default.createElement("div", { style: { overflow: 'hidden', clear: 'both', margin: '-.5rem' } },
-            react_1.default.createElement("div", { style: { float: 'left', width: '50%' } },
-                react_1.default.createElement(TargetBox_1.default, null)),
-            react_1.default.createElement("div", { style: { float: 'left' } },
-                react_1.default.createElement(SourceBox_1.default, { color: Colors_1.default.YELLOW }),
-                react_1.default.createElement(SourceBox_1.default, { color: Colors_1.default.YELLOW }),
-                react_1.default.createElement(SourceBox_1.default, { color: Colors_1.default.BLUE }),
-                react_1.default.createElement(SourceBox_1.default, { color: Colors_1.default.BLUE })))));
-}
-exports.default = Container;
-
-
-/***/ }),
-
-/***/ "./src/component/DragEditior/DragDemo/index.tsx":
-/*!******************************************************!*\
-  !*** ./src/component/DragEditior/DragDemo/index.tsx ***!
-  \******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result["default"] = mod;
-    return result;
-};
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var React = __importStar(__webpack_require__(/*! react */ "react"));
-var example_1 = __importDefault(__webpack_require__(/*! ./example */ "./src/component/DragEditior/DragDemo/example.tsx"));
-var withDragDropContext_1 = __importDefault(__webpack_require__(/*! ./withDragDropContext */ "./src/component/DragEditior/DragDemo/withDragDropContext.ts"));
-var DragEditor = /** @class */ (function (_super) {
-    __extends(DragEditor, _super);
-    function DragEditor(props) {
-        return _super.call(this, props) || this;
-    }
-    DragEditor.prototype.render = function () {
-        return (React.createElement(React.Fragment, null,
-            React.createElement(example_1.default, null)));
-    };
-    return DragEditor;
-}(React.Component));
-exports.default = withDragDropContext_1.default(DragEditor);
-
-
-/***/ }),
-
-/***/ "./src/component/DragEditior/DragDemo/withDragDropContext.ts":
-/*!*******************************************************************!*\
-  !*** ./src/component/DragEditior/DragDemo/withDragDropContext.ts ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var react_dnd_1 = __webpack_require__(/*! react-dnd */ "./node_modules/react-dnd/lib/index.js");
-var react_dnd_html5_backend_1 = __importDefault(__webpack_require__(/*! react-dnd-html5-backend */ "./node_modules/react-dnd-html5-backend/lib/index.js"));
-exports.default = react_dnd_1.DragDropContext(react_dnd_html5_backend_1.default);
 
 
 /***/ }),
@@ -26924,6 +26799,9 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
@@ -26931,23 +26809,32 @@ var __importStar = (this && this.__importStar) || function (mod) {
     result["default"] = mod;
     return result;
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-var React = __importStar(__webpack_require__(/*! react */ "react"));
 var withDragDropContext_1 = __importDefault(__webpack_require__(/*! ./withDragDropContext */ "./src/component/DragEditior/DragMock/withDragDropContext.ts"));
+var react_1 = __importStar(__webpack_require__(/*! react */ "react"));
+var SourceBox_1 = __importDefault(__webpack_require__(/*! ./SourceBox */ "./src/component/DragEditior/DragMock/SourceBox.tsx"));
+var TargetBox_1 = __importDefault(__webpack_require__(/*! ./TargetBox */ "./src/component/DragEditior/DragMock/TargetBox.tsx"));
+var DdTypes_1 = __importDefault(__webpack_require__(/*! ./DdTypes */ "./src/component/DragEditior/DragMock/DdTypes.ts"));
 var DragEditor = /** @class */ (function (_super) {
     __extends(DragEditor, _super);
     function DragEditor(props) {
         return _super.call(this, props) || this;
     }
     DragEditor.prototype.render = function () {
-        return (React.createElement(React.Fragment, null,
-            React.createElement("div", null, "21312312")));
+        var kk = { JSOx: 1 };
+        var kk2 = { JSOx: 2 };
+        var kk3 = { MNx: 3 };
+        return (react_1.default.createElement(react_1.Fragment, null,
+            react_1.default.createElement("div", { style: { overflow: 'hidden', clear: 'both', margin: '-.5rem' } },
+                react_1.default.createElement("div", { style: { float: 'left', width: '50%' } },
+                    react_1.default.createElement(TargetBox_1.default, null)),
+                react_1.default.createElement("div", { style: { float: 'left' } },
+                    react_1.default.createElement(SourceBox_1.default, { ddtype: DdTypes_1.default.TEXT, json: kk }, "this is TEXT"),
+                    react_1.default.createElement(SourceBox_1.default, { ddtype: DdTypes_1.default.PIC, json: kk2 }, "this is PIC"),
+                    react_1.default.createElement(SourceBox_1.default, { ddtype: DdTypes_1.default.LABEL, json: kk3 }, "this is LABEL")))));
     };
     return DragEditor;
-}(React.Component));
+}(react_1.default.Component));
 exports.default = withDragDropContext_1.default(DragEditor);
 
 
@@ -27039,7 +26926,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = __importStar(__webpack_require__(/*! react */ "react"));
 __webpack_require__(/*! ../../index.css */ "./src/index.css");
 __webpack_require__(/*! ./index.css */ "./src/component/DragEditior/index.css");
-var DragDemo_1 = __importDefault(__webpack_require__(/*! ./DragDemo */ "./src/component/DragEditior/DragDemo/index.tsx"));
 var DragMock_1 = __importDefault(__webpack_require__(/*! ./DragMock */ "./src/component/DragEditior/DragMock/index.tsx"));
 var DragEditor = /** @class */ (function (_super) {
     __extends(DragEditor, _super);
@@ -27057,8 +26943,7 @@ var DragEditor = /** @class */ (function (_super) {
         return (React.createElement(React.Fragment, null,
             React.createElement("p", null, "this is drag editor"),
             React.createElement("p", null, JSON.stringify(jsonData)),
-            React.createElement("div", null,
-                React.createElement(DragDemo_1.default, null)),
+            React.createElement("div", null),
             React.createElement("div", null,
                 React.createElement(DragMock_1.default, null))));
     };

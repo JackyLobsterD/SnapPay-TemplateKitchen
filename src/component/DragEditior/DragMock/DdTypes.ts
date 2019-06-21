@@ -1,5 +1,5 @@
 export default {
-    TEXT: 'text',
-    PIC: 'pic',
-    LABEL:'label'
+    TEXT: 'text111',
+    PIC: 'pic111',
+    LABEL:'label111'
 }

@@ -32,7 +32,7 @@ export default class DragEditor extends React.Component<PageProps, PageStates> {
                 <p>this is drag editor</p>
                 <p>{JSON.stringify(jsonData)}</p>
                 <div>
-                    <DragDemo/>
+                    {/*<DragDemo/>*/}
                 </div>
                 <div>
                     <DragMock/>

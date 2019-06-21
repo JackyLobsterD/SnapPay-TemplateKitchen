@@ -1,3 +1,4 @@
 export interface DragItem {
-    type: string
+    type: string,
+    json: object
 }
